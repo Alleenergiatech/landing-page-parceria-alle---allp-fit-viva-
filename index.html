@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alle Energia & Allp Fit | Energia Digital com Desconto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="imagens/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --alle-purple: #7b00ae;
+            --alle-orange: #fe6e00;
+            --alle-dark: #1e1b4b;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        /* Camada para escurecer a foto e garantir contraste do texto */
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, rgba(30, 27, 75, 0.9) 30%, rgba(30, 27, 75, 0.4) 100%);
+            z-index: 1;
+        }
+
+
+        .text-alle-orange { color: var(--alle-orange); }
+        .bg-alle-orange { background-color: var(--alle-orange); }
+        .bg-alle-purple { background-color: var(--alle-purple); }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(249, 115, 22, 0.5);
+        }
+
+        .card-anim:hover {
+            transform: scale(1.02);
+            border-color: var(--alle-orange);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-900">
+
+    <!-- Header -->
+    <header class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+
+        <!-- LOGO -->
+        <div class="flex items-center">
+            <a href="#" class="flex items-center cursor-pointer group">
+                <img src="imagens/logoalle.png" alt="logo_alle" class="w-40 md:w-56 lg:w-64 h-auto object-contain">
+            </a>
+        </div>
+
+        <!-- NAV -->
+        <nav class="hidden md:flex gap-10 font-medium text-sm uppercase tracking-wider">
+            <a href="#beneficios" class="hover:text-alle-orange transition">Benefícios</a>
+            <a href="#como-funciona" class="hover:text-alle-orange transition">Como Funciona</a>
+            <a href="#simulacao" class="hover:text-alle-orange transition">Simular Desconto</a>
+        </nav>
+
+        <!-- BOTÃO -->
+        <div class="flex items-center">
+            <a href="https://poupeenergia.bitrix24.site/crm_form_q5gh6/" target="_blank" class="bg-alle-orange text-white px-6 py-2 rounded-full font-bold text-sm btn-hover">
+                QUERO DESCONTO
+            </a>
+        </div>
+
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero-container min-h-screen flex items-center pt-20 relative">
+
+    <!-- Background -->
+    <img src="imagens/fotodefundo.png" alt="Energia Digital Alle" class="hero-bg-image">
+    <div class="hero-overlay"></div>
+
+    <!-- Conteúdo -->
+    <div class="px-6 md:px-12 relative z-10 w-full">
+        
+        <div class="text-white max-w-2xl">
+            
+            <span class="inline-block bg-alle-orange text-white px-4 py-1 rounded-full text-xs font-bold mb-6 uppercase tracking-widest shadow-lg">
+                Parceria: Alle + Allp Fit
+            </span>
+
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6">
+                Sua energia <span class="text-alle-orange">viva mais</span> com economia real.
+            </h1>
+
+            <p class="text-lg text-gray-200 mb-8">
+                Unimos a tecnologia da <b>Alle Energia Digital</b> com o bem-estar da <b>Allp Fit</b> para reduzir seus custos em SP e MG. Sem obras, sem investimento.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#simulacao" class="bg-alle-orange text-white px-8 py-4 rounded-xl font-bold text-center btn-hover text-lg">
+                    Começar Economia
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Regiões Atendidas -->
+    <div class="bg-alle-purple py-4">
+        <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-8 text-white/70 text-sm font-bold uppercase tracking-widest">
+            <span>Disponível em:</span>
+            <span class="flex items-center gap-2 text-white"><span class="w-2 h-2 bg-alle-orange rounded-full"></span> São Paulo</span>
+            <span class="flex items-center gap-2 text-white"><span class="w-2 h-2 bg-alle-orange rounded-full"></span> Minas Gerais</span>
+        </div>
+    </div>
+
+    <!-- Benefícios -->
+    <section id="beneficios" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 text-center mb-16">
+            <h2 class="text-4xl font-extrabold text-alle-dark mb-4">Por que escolher <span class="text-alle-orange">Alle Energia</span></h2>
+            <p class="text-gray-500">A tecnologia a serviço do seu bolso e do planeta.</p>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-xl transition group">
+                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-alle-purple mb-6 group-hover:bg-alle-purple group-hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Energia 100% Digital</h4>
+                <p class="text-gray-600">Nada de fios extras ou painéis no telhado. Tudo acontece através da rede da distribuidora local.</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-xl transition group">
+                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-alle-orange mb-6 group-hover:bg-alle-orange group-hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Custo Zero de Adesão</h4>
+                <p class="text-gray-600">Você não paga nada para entrar e não paga multa para sair. É economia pura.</p>
+            </div>
+            <div class="p-8 rounded-2xl bg-gray-50 border border-gray-100 hover:shadow-xl transition group">
+                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600 mb-6 group-hover:bg-green-600 group-hover:text-white transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+                <h4 class="text-xl font-bold mb-3">Sustentabilidade</h4>
+                <p class="text-gray-600">Toda a nossa energia vem de fontes limpas e renováveis.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-alle-purple">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+
+        <!-- TÍTULO -->
+        <h2 class="text-3xl md:text-4xl font-extrabold text-white">
+            Economize na sua conta de energia
+        </h2>
+
+        <p class="text-white mt-3 max-w-2xl mx-auto">
+            Pessoas físicas e empresas podem reduzir custos com energia de forma simples, sem instalação e sem burocracia.
+        </p>
+
+        <!-- CARDS -->
+        <div class="grid md:grid-cols-2 gap-8 mt-14">
+
+            <!-- Pessoa Física -->
+            <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all">
+                
+                <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-xl bg-orange-100 mb-6">
+                    <span class="text-alle-orange text-2xl">⚡</span>
+                </div>
+
+                <p class="text-sm uppercase font-semibold text-gray-400 tracking-wider">
+                    Pessoa Física
+                </p>
+
+                <h3 class="text-5xl font-black mt-3 text-gray-900">
+                    Até 15%
+                </h3>
+
+                <p class="text-lg font-medium text-alle-orange mt-1">
+                    de desconto
+                </p>
+
+                <p class="text-gray-500 mt-4 text-sm leading-relaxed">
+                    Reduza sua conta de luz residencial sem instalar placas solares e sem custos adicionais.
+                </p>
+
+            </div>
+
+            <!-- Negócios -->
+            <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all">
+                
+                <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-xl bg-purple-100 mb-6">
+                    <span class="text-alle-purple text-2xl">💼</span>
+                </div>
+
+                <p class="text-sm uppercase font-semibold text-gray-400 tracking-wider">
+                    Negócios / Empresas
+                </p>
+
+                <h3 class="text-5xl font-black mt-3 text-gray-900">
+                    Até 30%
+                </h3>
+
+                <p class="text-lg font-medium text-alle-orange mt-1">
+                    de desconto
+                </p>
+
+                <p class="text-gray-500 mt-4 text-sm leading-relaxed">
+                    Diminua os custos operacionais do seu negócio com energia limpa e mais econômica.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="mt-12">
+            <a href="https://poupeenergia.bitrix24.site/crm_form_q5gh6/" target="_blank" class="bg-alle-orange text-white px-8 py-4 rounded-full font-bold text-sm hover:scale-105 transition-all inline-block">
+                SIMULAR MEU DESCONTO
+            </a>
+        </div>
+
+    </div>
+</section>
+
+    <!-- CTA / Simulation Section -->
+    <section class="w-full py-16 px-4 md:px-8 flex justify-center items-center min-h-screen bg-gray-50">
+  <div class="relative w-full max-w-5xl mx-auto"> <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-quicksand font-extrabold leading-tight text-gray-900">
+        Calcule agora a sua economia
+        <span class="block text-purple-600">e veja sua economia anual</span>
+      </h2>
+    </div>
+
+    <div id="simulador" class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl shadow-black/5 relative w-full border border-gray-100">
+      
+      <div class="absolute -top-4 left-1/2 -translate-x-1/2 md:left-12 md:translate-x-0 bg-green-500 text-white text-sm font-bold px-4 py-1.5 rounded-full shadow-lg transform -rotate-2">
+        Simulador Rápido
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center mt-4">
+        
+        <div class="w-full">
+          <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center lg:text-left">
+            Preencha para receber sua economia
+          </h3>
+
+          <div class="w-full bg-white rounded-2xl">
+            <script data-b24-form="inline/166/sb25x4" data-skip-moving="true">
+              (function(w,d,u){var s=d.createElement('script');s.async=true;s.src=u+'?'+(Date.now()/180000|0);var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(window,document,'https://cdn.bitrix24.com.br/b29334815/crm/form/loader_166.js');
+            </script>
+          </div>
+        </div>
+
+        <div class="flex flex-col justify-center">
+          <p class="text-gray-500 text-base md:text-lg mb-8 text-center lg:text-left">
+            Arraste para definir a média da sua fatura mensal de energia.
+          </p>
+          
+          <div class="mb-8">
+            <div class="flex justify-between items-end mb-3">
+              <label class="text-base font-semibold text-gray-700">Fatura Mensal</label>
+              <span id="fatura-valor" class="text-3xl font-black text-purple-600">R$ 300,00</span>
+            </div>
+
+            <input type="range" id="fatura-range" min="300" max="10000" step="1" value="300"
+              class="w-full h-3 bg-purple-100 rounded-lg appearance-none cursor-pointer accent-purple-600">
+
+            <div class="flex justify-between text-sm text-gray-400 mt-3 font-medium">
+              <span>R$ 300</span>
+              <span>R$ 10.000</span>
+            </div>
+          </div>
+
+          <div class="bg-purple-50 rounded-2xl p-6 md:p-8 border border-purple-100 w-full shadow-sm">
+            <div class="flex justify-between items-center mb-6">
+              <span class="text-base text-gray-600 font-medium">Economia Mensal (15%)</span>
+              <span id="economia-mensal" class="font-bold text-green-600 text-xl md:text-2xl">R$ 45,00</span>
+            </div>
+
+            <div class="flex justify-between items-center pt-6 border-t border-purple-200">
+              <span class="text-lg font-bold text-gray-800">Economia Anual</span>
+              <span id="economia-anual" class="text-4xl md:text-5xl font-black text-green-500">R$ 540,00</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- Footer -->
+    <footer class="bg-alle-purple text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-12">
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-2 mb-6">
+                    <a href="#" class="flex items-center cursor-pointer group">
+                    <img src="imagens/logoallebranca.png" alt="logo_alle_branca" class="w-60 md:w-80 lg:w-80 h-auto object-contain">
+                    </a>
+                </div>
+                <p class="text-white max-w-sm">
+                    Uma Parceria focada em levar economia real para as famílias e empresas brasileiras de forma simples e sustentável, sem obras e sem custo.
+                </p>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 text-alle-orange uppercase tracking-widest text-sm">Empresa</h5>
+                <ul class="space-y-4 text-white">
+                    <li><a href="https://alleenergia.com" target="_blank" class="hover:text-white transition">Alle Energia</a></li>
+                    <li><a href="https://allpfitvivamais.com.br" target="_blank" class="hover:text-white transition">Allpfit Viva+</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="font-bold mb-6 text-alle-orange uppercase tracking-widest text-sm">Fale Conosco</h5>
+                <ul class="space-y-4 white">
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                        suporte@alleenergia.com.br
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        +55 (84) 99468-5283
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                        +55 (31) 993618-1441
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 mt-16 pt-8 border-t border-white/10 text-center text-sm text-gray-500">
+            © 2024 Alle Energia Digital. Todos os direitos reservados. Em parceria com Allp Fit Viva Mais.
+        </div>
+    </footer>
+
+    <script>
+        let selectedPerfil = null;
+
+         const faturaRange = document.getElementById('fatura-range');
+        const faturaValor = document.getElementById('fatura-valor');
+        const economiaMensal = document.getElementById('economia-mensal');
+        const economiaAnual = document.getElementById('economia-anual');
+
+        // Configuração do Formatador de Moeda
+        const formatter = new Intl.NumberFormat('pt-BR', {
+            style: 'currency',
+            currency: 'BRL'
+        });
+
+        // FUNÇÃO: Calcular e atualizar os valores de economia no ecrã
+        function calcularEconomia(valor) {
+            const desconto = 0.15; // 15% de desconto fixo para simulação
+            const mensal = valor * desconto;
+            const anual = mensal * 12;
+
+            faturaValor.textContent = formatter.format(valor);
+            economiaMensal.textContent = formatter.format(mensal);
+            economiaAnual.textContent = formatter.format(anual);
+        }
+        
+        // Listener para mudanças no Range Slider da Calculadora
+        if (faturaRange) {
+            faturaRange.addEventListener('input', (e) => {
+                calcularEconomia(Number(e.target.value));
+            });
+            // Chamada inicial para popular com o valor pré-definido (500)
+            calcularEconomia(Number(faturaRange.value));
+        }
+
+        function setPerfil(type) {
+            selectedPerfil = type;
+            const btnPF = document.getElementById('btnPF');
+            const btnPJ = document.getElementById('btnPJ');
+            
+            if(type === 'PF') {
+                btnPF.classList.add('border-alle-orange', 'text-alle-orange', 'bg-orange-50');
+                btnPF.classList.remove('text-gray-400', 'border-gray-200');
+                btnPJ.classList.remove('border-alle-orange', 'text-alle-orange', 'bg-orange-50');
+                btnPJ.classList.add('text-gray-400', 'border-gray-200');
+            } else {
+                btnPJ.classList.add('border-alle-purple', 'text-alle-purple', 'bg-purple-50');
+                btnPJ.classList.remove('text-gray-400', 'border-gray-200');
+                btnPF.classList.remove('border-alle-purple', 'text-alle-purple', 'bg-purple-50');
+                btnPF.classList.add('text-gray-400', 'border-gray-200');
+            }
+        }
+
+        document.getElementById('calcForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const estado = document.getElementById('estado').value;
+            const valorConta = parseFloat(document.getElementById('valorConta').value);
+            
+            if(!estado || !selectedPerfil || isNaN(valorConta)) {
+                alert("Por favor, preencha todos os campos e selecione o perfil.");
+                return;
+            }
+
+            // Lógica de cálculo conforme briefing
+            // PF: 15%, PJ: 30%
+            let percentual = (selectedPerfil === 'PF') ? 0.15 : 0.30;
+            
+            const economiaMensal = valorConta * percentual;
+            const economiaAnual = economiaMensal * 12;
+
+            const resultDiv = document.getElementById('result');
+            const valorDisplay = document.getElementById('valorEconomia');
+            
+            resultDiv.classList.remove('hidden');
+            valorDisplay.innerHTML = `R$ ${economiaAnual.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2})} <span class="text-base font-normal">/ano</span>`;
+            
+            // Rola suavemente para o resultado
+            resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    </script>
+</body>
+</html>
