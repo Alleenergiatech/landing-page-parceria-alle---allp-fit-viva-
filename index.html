@@ -29,7 +29,7 @@
             z-index: 0;
         }
 
-        /* Camada para escurecer a foto e garantir contraste do texto */
+        
         .hero-overlay {
             position: absolute;
             top: 0;
@@ -67,25 +67,25 @@
 </head>
 <body class="bg-gray-50 text-slate-900">
 
-    <!-- Header -->
+    
     <header class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
         <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
 
-        <!-- LOGO -->
+       
         <div class="flex items-center">
             <a href="#" class="flex items-center cursor-pointer group">
                 <img src="imagens/logoalle.png" alt="logo_alle" class="w-40 md:w-56 lg:w-64 h-auto object-contain">
             </a>
         </div>
 
-        <!-- NAV -->
+       
         <nav class="hidden md:flex gap-10 font-medium text-sm uppercase tracking-wider">
             <a href="#beneficios" class="hover:text-alle-orange transition">Benefícios</a>
             <a href="#como-funciona" class="hover:text-alle-orange transition">Como Funciona</a>
             <a href="#simulacao" class="hover:text-alle-orange transition">Simular Desconto</a>
         </nav>
 
-        <!-- BOTÃO -->
+        
         <div class="flex items-center">
             <a href="https://poupeenergia.bitrix24.site/crm_form_q5gh6/" target="_blank" class="bg-alle-orange text-white px-6 py-2 rounded-full font-bold text-sm btn-hover">
                 QUERO DESCONTO
@@ -95,14 +95,14 @@
     </div>
 </header>
 
-    <!-- Hero Section -->
+    
     <section class="hero-container min-h-screen flex items-center pt-20 relative">
 
-    <!-- Background -->
+    
     <img src="imagens/fotodefundo.png" alt="Energia Digital Alle" class="hero-bg-image">
     <div class="hero-overlay"></div>
 
-    <!-- Conteúdo -->
+    
     <div class="px-6 md:px-12 relative z-10 w-full">
         
         <div class="text-white max-w-2xl">
@@ -131,7 +131,7 @@
 
 </section>
 
-    <!-- Regiões Atendidas -->
+    
     <div class="bg-alle-purple py-4">
         <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center gap-8 text-white/70 text-sm font-bold uppercase tracking-widest">
             <span>Disponível em:</span>
@@ -140,7 +140,7 @@
         </div>
     </div>
 
-    <!-- Benefícios -->
+    
     <section id="beneficios" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 text-center mb-16">
             <h2 class="text-4xl font-extrabold text-alle-dark mb-4">Por que escolher <span class="text-alle-orange">Alle Energia</span></h2>
@@ -180,7 +180,7 @@
     <section class="py-20 bg-alle-purple">
     <div class="max-w-6xl mx-auto px-4 text-center">
 
-        <!-- TÍTULO -->
+       
         <h2 class="text-3xl md:text-4xl font-extrabold text-white">
             Economize na sua conta de energia
         </h2>
@@ -189,10 +189,10 @@
             Pessoas físicas e empresas podem reduzir custos com energia de forma simples, sem instalação e sem burocracia.
         </p>
 
-        <!-- CARDS -->
+        
         <div class="grid md:grid-cols-2 gap-8 mt-14">
 
-            <!-- Pessoa Física -->
+        
             <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all">
                 
                 <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-xl bg-orange-100 mb-6">
@@ -217,7 +217,7 @@
 
             </div>
 
-            <!-- Negócios -->
+            
             <div class="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg hover:-translate-y-2 transition-all">
                 
                 <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-xl bg-purple-100 mb-6">
@@ -244,7 +244,7 @@
 
         </div>
 
-        <!-- CTA -->
+        
         <div class="mt-12">
             <a href="https://poupeenergia.bitrix24.site/crm_form_q5gh6/" target="_blank" class="bg-alle-orange text-white px-8 py-4 rounded-full font-bold text-sm hover:scale-105 transition-all inline-block">
                 SIMULAR MEU DESCONTO
@@ -254,7 +254,7 @@
     </div>
 </section>
 
-    <!-- CTA / Simulation Section -->
+    
     <section class="w-full py-16 px-4 md:px-8 flex justify-center items-center min-h-screen bg-gray-50">
   <div class="relative w-full max-w-5xl mx-auto"> <div class="text-center mb-12">
       <h2 class="text-4xl md:text-5xl font-quicksand font-extrabold leading-tight text-gray-900">
@@ -320,7 +320,7 @@
     </div>
   </div>
 </section>
-    <!-- Footer -->
+    
     <footer class="bg-alle-purple text-white py-16">
         <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-12">
             <div class="md:col-span-2">
@@ -371,13 +371,13 @@
         const economiaMensal = document.getElementById('economia-mensal');
         const economiaAnual = document.getElementById('economia-anual');
 
-        // Configuração do Formatador de Moeda
+       
         const formatter = new Intl.NumberFormat('pt-BR', {
             style: 'currency',
             currency: 'BRL'
         });
 
-        // FUNÇÃO: Calcular e atualizar os valores de economia no ecrã
+        
         function calcularEconomia(valor) {
             const desconto = 0.15; // 15% de desconto fixo para simulação
             const mensal = valor * desconto;
@@ -388,12 +388,12 @@
             economiaAnual.textContent = formatter.format(anual);
         }
         
-        // Listener para mudanças no Range Slider da Calculadora
+        
         if (faturaRange) {
             faturaRange.addEventListener('input', (e) => {
                 calcularEconomia(Number(e.target.value));
             });
-            // Chamada inicial para popular com o valor pré-definido (500)
+            
             calcularEconomia(Number(faturaRange.value));
         }
 
@@ -426,8 +426,7 @@
                 return;
             }
 
-            // Lógica de cálculo conforme briefing
-            // PF: 15%, PJ: 30%
+            
             let percentual = (selectedPerfil === 'PF') ? 0.15 : 0.30;
             
             const economiaMensal = valorConta * percentual;
@@ -439,7 +438,7 @@
             resultDiv.classList.remove('hidden');
             valorDisplay.innerHTML = `R$ ${economiaAnual.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2})} <span class="text-base font-normal">/ano</span>`;
             
-            // Rola suavemente para o resultado
+            
             resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
         });
     </script>
